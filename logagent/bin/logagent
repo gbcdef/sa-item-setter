@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+
+bin=$(which "$0")
+bin=$(dirname "$bin")
+bin=$(cd "$bin"; pwd)
+
+source $bin/check-java
+
+LIB=$bin/../lib
+CLASSPATH=$(JARS=("$LIB"/*.jar); IFS=:; echo "${JARS[*]}")
+
+[ -z "$SA_LOG_AGENT_LOG_PATH" ] && export SA_LOG_AGENT_LOG_PATH=$bin/../log/logagent.log
+[ -z "$SA_LOG_AGENT_CONFIG_FILE" ] && export SA_LOG_AGENT_CONFIG_FILE=$bin/../logagent.conf
+LAST_ERROR_LOGS_SIZE=50
+
+JAVA=$_java
+JAVA_MAIN_CLASS="com.sensorsdata.analytics.tools.logagent.LogAgentMain"
+JAVA_JVM_ARGS="-classpath $CLASSPATH \
+  -Dsa.root.logger=DEBUG,DRFA,console \
+  -Dsa.log.file=$SA_LOG_AGENT_LOG_PATH \
+  -Dsa.log.last.error.size=$LAST_ERROR_LOGS_SIZE \
+  -Dfile.encoding=UTF-8 \
+  -Xms192m -Xmx192m -Xmn128m \
+  -XX:+UseParallelGC -XX:+UseParallelOldGC \
+  -XX:ParallelGCThreads=3"
+
+exec "$JAVA" ${JAVA_JVM_ARGS} ${JAVA_MAIN_CLASS} "$@"

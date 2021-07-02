@@ -1,0 +1,69 @@
+错误原因:从服务端获取 LogAgent 进度失败, 失败原因：详情请见前几条日志输出。
+error status:Fail to get LogAgent progress from server, error status: please refer to previous log information for details.
+{
+  "log_agent_id" : "AgeniusE14",
+  "source_path" : "C:\\Home\\Developers\\sa-item-setter\\data\\sa",
+  "file_match_pattern" : "*.log",
+  "sender_type" : "com.sensorsdata.analytics.tools.logagent.sender.BatchSender",
+  "processor_class_name" : null,
+  "reverse_file_list" : false,
+  "real_time_file_name" : null,
+  "service_uri" : "http://datasink.vovaapp.com:443/log_agent",
+  "target_uri" : null,
+  "sending_speed_limit" : 0,
+  "context_file" : "C:\\Home\\Developers\\sa-item-setter\\logagent\\bin\\logagent.pid.context",
+  "project" : "test",
+  "host_key" : "D8:F3:BC:98:30:73",
+  "send_data_timeout_ms" : 10000,
+  "standalone" : null,
+  "flush_sender_interval" : 10,
+  "batch_sender_buffer" : 150,
+  "version" : "SensorsAnalytics LogAgent_20210605",
+  "instance_id" : null,
+  "source_progress" : null,
+  "update_progress_time" : null,
+  "start_log_agent_time" : 1625226077132,
+  "service_request_time" : null,
+  "send_context_time" : null,
+  "client_ip" : null,
+  "server_id" : null,
+  "service_version" : 0,
+  "cookie_store" : null,
+  "speed" : null,
+  "latency_data_size_in_byte" : null,
+  "latency_data_files" : null,
+  "pid" : "13620",
+  "config_file" : "C:\\Home\\Developers\\sa-item-setter\\logagent\\bin\\\\..\\\\logagent.conf",
+  "cmd_args" : ""
+}
+2021-07-02 19:41:28,272 [main] INFO  [com.sensorsdata.analytics.extractor.common.Supervisor] - Executor lifecycle-2 endpoint, is_stopped: false
+2021-07-02 19:41:38,365 [main] INFO  [com.sensorsdata.analytics.extractor.common.Supervisor] - Executor lifecycle-3 started
+2021-07-02 19:41:38,366 [Executor-3] INFO  [com.sensorsdata.analytics.tools.logagent.LogAgent] - Use new local context file.
+2021-07-02 19:41:38,452 [Executor-3] ERROR [com.sensorsdata.analytics.tools.logagent.FailCollector] - 从服务端获取 LogAgent 进度失败, 失败原因：
+2021-07-02 19:41:38,456 [Executor-3] ERROR [com.sensorsdata.analytics.tools.logagent.FailCollector] - Fail to get LogAgent progress from server, error status: 
+java.net.SocketException: Software caused connection abort: recv failed
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at shaded.org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)
+	at shaded.org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)
+	at shaded.org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:282)
+	at shaded.org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138)
+	at shaded.org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+	at shaded.org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at shaded.org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at shaded.org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:157)
+	at shaded.org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at shaded.org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at shaded.org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)
+	at shaded.org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at shaded.org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at shaded.org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at shaded.org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at shaded.org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at shaded.org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at com.sensorsdata.analytics.tools.logagent.ServiceClient.a(ServiceClient.java:82)
+	at com.sensorsdata.analytics.tools.logagent.ServiceClient.getProgress(ServiceClient.java:34)
+	at com.sensorsdata.analytics.tools.logagent.LogAgent.run(LogAgent.java:153)
+	at java.lang.Thread.run(Unknown Source)

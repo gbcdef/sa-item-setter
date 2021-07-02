@@ -1,0 +1,44 @@
+#!/usr/bin/env bash
+
+bin=$(which "$0")
+bin=$(dirname "$bin")
+bin=$(cd "$bin"; pwd)
+
+_fail() {
+    echo "$1"
+    exit "$2"
+}
+
+mkdir -p "$bin/../java"
+
+JRE_PACKAGE_NAME=amazon-corretto-8.212.04.2-linux-x64-jre.tar.gz
+JRE_PACKAGE_MD5=dc4a1e68f6f034fd7fa427412cb3232c
+JRE_DIR_NAME=amazon-corretto-8.212.04.2-linux-x64-jre
+
+JRE_PACKAGE_URL=http://download.sensorsdata.cn/release/tmp/jdk/${JRE_PACKAGE_NAME}
+
+if [[ -f "$bin/../java/${JRE_PACKAGE_NAME}" ]]; then
+    JRE_MD5=$(md5sum "$bin/../java/${JRE_PACKAGE_NAME}" | awk '{print $1}')
+    if [[ $JRE_MD5 != ${JRE_PACKAGE_MD5} ]]; then
+        rm "$bin/../java/${JRE_PACKAGE_NAME}" || _fail "MD5 check failed. Remove jre package failed" 5
+    fi
+fi
+
+if [[ ! -f "$bin/../java/${JRE_PACKAGE_NAME}" ]]; then
+    echo "Download ${JRE_PACKAGE_URL} ..."
+    wget ${JRE_PACKAGE_URL} -O "$bin/../java/${JRE_PACKAGE_NAME}" || _fail "Download jre failed, please retry or install by other way." 1
+    echo "Download ${JRE_PACKAGE_NAME} successfully."
+else
+    echo "Found ${JRE_PACKAGE_NAME} ..."
+fi
+
+echo "Extract ${JRE_PACKAGE_NAME} ..."
+tar zxf "$bin/../java/${JRE_PACKAGE_NAME}" -C "$bin/../java" || _fail "Extract jre package failed, please check dir permissions and disk space." 2
+
+CURRENT_DIR=$(pwd)
+cd "$bin/../java"
+ln -f -s "${JRE_DIR_NAME}" "jre" || cd $CURRENT_DIR || _fail "Create soft link failed, please check dir permissions." 3
+
+# rm $bin/../java/${JRE_PACKAGE_NAME} || _fail "Remove jre package failed" 4
+
+echo "Install ${JRE_DIR_NAME} successfully."

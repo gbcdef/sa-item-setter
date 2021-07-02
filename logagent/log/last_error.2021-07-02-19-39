@@ -1,0 +1,60 @@
+错误原因:从服务端获取 LogAgent 进度失败, 失败原因：详情请见前几条日志输出。
+error status:Fail to get LogAgent progress from server, error status: please refer to previous log information for details.
+{
+  "log_agent_id" : "AgeniusE14",
+  "source_path" : "C:\\Home\\Developers\\sa-item-setter\\data\\sa",
+  "file_match_pattern" : "*.log",
+  "sender_type" : "com.sensorsdata.analytics.tools.logagent.sender.BatchSender",
+  "processor_class_name" : null,
+  "reverse_file_list" : false,
+  "real_time_file_name" : null,
+  "service_uri" : "http://datasink.vovaapp.com:80/log_agent",
+  "target_uri" : null,
+  "sending_speed_limit" : 0,
+  "context_file" : "C:\\Home\\Developers\\sa-item-setter\\logagent\\bin\\logagent.pid.context",
+  "project" : "test",
+  "host_key" : "D8:F3:BC:98:30:73",
+  "send_data_timeout_ms" : 10000,
+  "standalone" : null,
+  "flush_sender_interval" : 10,
+  "batch_sender_buffer" : 150,
+  "version" : "SensorsAnalytics LogAgent_20210605",
+  "instance_id" : null,
+  "source_progress" : null,
+  "update_progress_time" : null,
+  "start_log_agent_time" : 1625225947163,
+  "service_request_time" : null,
+  "send_context_time" : null,
+  "client_ip" : null,
+  "server_id" : null,
+  "service_version" : 0,
+  "cookie_store" : null,
+  "speed" : null,
+  "latency_data_size_in_byte" : null,
+  "latency_data_files" : null,
+  "pid" : "17112",
+  "config_file" : "C:\\Home\\Developers\\sa-item-setter\\logagent\\bin\\\\..\\\\logagent.conf",
+  "cmd_args" : ""
+}
+2021-07-02 19:39:29,147 [main] INFO  [com.sensorsdata.analytics.extractor.common.Supervisor] - Executor lifecycle-3 endpoint, is_stopped: false
+2021-07-02 19:39:39,220 [main] INFO  [com.sensorsdata.analytics.extractor.common.Supervisor] - Executor lifecycle-4 started
+2021-07-02 19:39:39,221 [Executor-4] INFO  [com.sensorsdata.analytics.tools.logagent.LogAgent] - Use new local context file.
+2021-07-02 19:39:39,327 [Executor-4] WARN  [com.sensorsdata.analytics.tools.logagent.ServiceClient] - Can't connect to LogAgent Service: http://datasink.vovaapp.com:80/log_agent, !! PLEASE CHECK NETWORK CONNECTION !!, status: 404, errorMsg: <!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 404 (Not Found)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}
+  </style>
+  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>
+  <p><b>404.</b> <ins>That’s an error.</ins>
+  <p>The requested URL <code>/log_agent</code> was not found on this server.  <ins>That’s all we know.</ins>
+2021-07-02 19:39:39,328 [Executor-4] WARN  [com.sensorsdata.analytics.tools.logagent.ServiceClient] - 无法连接 LogAgent 服务: http://datasink.vovaapp.com:80/log_agent，请检查配置是否正确，请求是否可达
+2021-07-02 19:39:39,330 [Executor-4] ERROR [com.sensorsdata.analytics.tools.logagent.FailCollector] - 从服务端获取 LogAgent 进度失败, 失败原因：
+2021-07-02 19:39:39,331 [Executor-4] ERROR [com.sensorsdata.analytics.tools.logagent.FailCollector] - Fail to get LogAgent progress from server, error status: 
+java.lang.Exception
+	at com.sensorsdata.analytics.tools.logagent.ServiceClient.a(ServiceClient.java:93)
+	at com.sensorsdata.analytics.tools.logagent.ServiceClient.getProgress(ServiceClient.java:34)
+	at com.sensorsdata.analytics.tools.logagent.LogAgent.run(LogAgent.java:153)
+	at java.lang.Thread.run(Unknown Source)

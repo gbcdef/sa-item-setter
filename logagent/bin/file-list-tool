@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+
+bin=$(which "$0")
+bin=$(dirname "$bin")
+bin=$(cd "$bin"; pwd)
+
+source $bin/check-java 1>&2
+
+LIB=${bin}/../lib
+CLASSPATH=$(JARS=("$LIB"/*.jar); IFS=:; echo "${JARS[*]}")
+
+JAVA=$_java
+JAVA_MAIN_CLASS="com.sensorsdata.analytics.tools.logagent.FileListTool"
+JAVA_JVM_ARGS="-classpath $CLASSPATH \
+  -Dsa.root.logger=INFO,console \
+  -Xms128m -Xmx128m -XX:+UseParallelGC -XX:ParallelGCThreads=4 \
+  -XX:+UseParallelOldGC -XX:YoungGenerationSizeIncrement=20 \
+  -XX:TenuredGenerationSizeIncrement=20"
+
+if [ $# = 0 ]; then
+  exec "$JAVA" ${JAVA_JVM_ARGS} ${JAVA_MAIN_CLASS} "-h"
+  exit 4
+fi
+
+exec "$JAVA" ${JAVA_JVM_ARGS} ${JAVA_MAIN_CLASS} "$@"

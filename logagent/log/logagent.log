@@ -1,0 +1,322 @@
+2021-07-02 19:36:59,942 [main] INFO  [com.sensorsdata.analytics.tools.logagent.LogAgentMain] - LogAgent version: SensorsAnalytics LogAgent_20210605
+2021-07-02 19:36:59,956 [main] INFO  [com.sensorsdata.analytics.tools.logagent.LogAgentMain] - Config File: C:\Home\Developers\sa-item-setter\logagent\logagent.conf
+2021-07-02 19:37:00,000 [main] INFO  [com.sensorsdata.analytics.tools.logagent.LogAgentMain] - Use FQDN as LogAgentID
+2021-07-02 19:37:00,050 [main] INFO  [com.sensorsdata.analytics.tools.logagent.LogAgentMain] - LogAgent ID: AgeniusE14
+2021-07-02 19:37:00,050 [main] ERROR [com.sensorsdata.analytics.tools.logagent.LogAgentMain] - Property 'path', 'pattern' must be set.
+2021-07-02 19:37:00,051 [main] ERROR [com.sensorsdata.analytics.tools.logagent.LogAgentMain] - 需要指定数据路径 'path'，以及数据文件匹配模式 'pattern'。
+2021-07-02 19:38:16,952 [main] INFO  [com.sensorsdata.analytics.tools.logagent.LogAgentMain] - LogAgent version: SensorsAnalytics LogAgent_20210605
+2021-07-02 19:38:16,963 [main] INFO  [com.sensorsdata.analytics.tools.logagent.LogAgentMain] - Config File: C:\Home\Developers\sa-item-setter\logagent\logagent.conf
+2021-07-02 19:38:17,001 [main] INFO  [com.sensorsdata.analytics.tools.logagent.LogAgentMain] - Use FQDN as LogAgentID
+2021-07-02 19:38:17,015 [main] INFO  [com.sensorsdata.analytics.tools.logagent.LogAgentMain] - LogAgent ID: AgeniusE14
+2021-07-02 19:38:17,015 [main] ERROR [com.sensorsdata.analytics.tools.logagent.LogAgentMain] - Property 'path', 'pattern' must be set.
+2021-07-02 19:38:17,015 [main] ERROR [com.sensorsdata.analytics.tools.logagent.LogAgentMain] - 需要指定数据路径 'path'，以及数据文件匹配模式 'pattern'。
+2021-07-02 19:39:07,166 [main] INFO  [com.sensorsdata.analytics.tools.logagent.LogAgentMain] - LogAgent version: SensorsAnalytics LogAgent_20210605
+2021-07-02 19:39:07,177 [main] INFO  [com.sensorsdata.analytics.tools.logagent.LogAgentMain] - Config File: C:\Home\Developers\sa-item-setter\logagent\logagent.conf
+2021-07-02 19:39:07,214 [main] INFO  [com.sensorsdata.analytics.tools.logagent.LogAgentMain] - Use FQDN as LogAgentID
+2021-07-02 19:39:07,227 [main] INFO  [com.sensorsdata.analytics.tools.logagent.LogAgentMain] - LogAgent ID: AgeniusE14
+2021-07-02 19:39:07,228 [main] INFO  [com.sensorsdata.analytics.tools.logagent.LogAgentMain] - Source config, path: 'C:\Home\Developers\sa-item-setter\data\sa', pattern: '*.log'
+2021-07-02 19:39:07,372 [main] INFO  [com.sensorsdata.analytics.tools.logagent.LogAgentMain] - Service Uri: http://datasink.vovaapp.com:80/log_agent
+2021-07-02 19:39:07,372 [main] INFO  [com.sensorsdata.analytics.tools.logagent.LogAgentMain] - Sender Type: BatchSender
+2021-07-02 19:39:07,372 [main] INFO  [com.sensorsdata.analytics.tools.logagent.LogAgentMain] - Project: test
+2021-07-02 19:39:07,433 [main] INFO  [com.sensorsdata.analytics.tools.logagent.LogAgentMain] - Pid file: C:\Home\Developers\sa-item-setter\logagent\bin\logagent.pid
+2021-07-02 19:39:07,752 [main] INFO  [com.sensorsdata.analytics.tools.logagent.LogAgentMain] - Will rewrite 'pid_file' from 'logagent.pid' to 'C:\Home\Developers\sa-item-setter\logagent\bin\logagent.pid'(from args).
+2021-07-02 19:39:07,757 [main] INFO  [com.sensorsdata.analytics.extractor.common.Supervisor] - Executor lifecycle-1 started
+2021-07-02 19:39:07,757 [Executor-1] INFO  [com.sensorsdata.analytics.tools.logagent.LogAgent] - Use new local context file.
+2021-07-02 19:39:08,701 [Executor-1] WARN  [com.sensorsdata.analytics.tools.logagent.ServiceClient] - Can't connect to LogAgent Service: http://datasink.vovaapp.com:80/log_agent, !! PLEASE CHECK NETWORK CONNECTION !!, status: 404, errorMsg: <!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 404 (Not Found)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}
+  </style>
+  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>
+  <p><b>404.</b> <ins>That’s an error.</ins>
+  <p>The requested URL <code>/log_agent</code> was not found on this server.  <ins>That’s all we know.</ins>
+2021-07-02 19:39:08,701 [Executor-1] WARN  [com.sensorsdata.analytics.tools.logagent.ServiceClient] - 无法连接 LogAgent 服务: http://datasink.vovaapp.com:80/log_agent，请检查配置是否正确，请求是否可达
+2021-07-02 19:39:08,707 [Executor-1] ERROR [com.sensorsdata.analytics.tools.logagent.FailCollector] - 从服务端获取 LogAgent 进度失败, 失败原因：
+2021-07-02 19:39:08,710 [Executor-1] ERROR [com.sensorsdata.analytics.tools.logagent.FailCollector] - Fail to get LogAgent progress from server, error status: 
+java.lang.Exception
+	at com.sensorsdata.analytics.tools.logagent.ServiceClient.a(ServiceClient.java:93)
+	at com.sensorsdata.analytics.tools.logagent.ServiceClient.getProgress(ServiceClient.java:34)
+	at com.sensorsdata.analytics.tools.logagent.LogAgent.run(LogAgent.java:153)
+	at java.lang.Thread.run(Unknown Source)
+2021-07-02 19:39:08,713 [main] INFO  [com.sensorsdata.analytics.extractor.common.Supervisor] - Executor lifecycle-1 endpoint, is_stopped: false
+2021-07-02 19:39:18,816 [main] INFO  [com.sensorsdata.analytics.extractor.common.Supervisor] - Executor lifecycle-2 started
+2021-07-02 19:39:18,817 [Executor-2] INFO  [com.sensorsdata.analytics.tools.logagent.LogAgent] - Use new local context file.
+2021-07-02 19:39:18,924 [Executor-2] WARN  [com.sensorsdata.analytics.tools.logagent.ServiceClient] - Can't connect to LogAgent Service: http://datasink.vovaapp.com:80/log_agent, !! PLEASE CHECK NETWORK CONNECTION !!, status: 404, errorMsg: <!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 404 (Not Found)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}
+  </style>
+  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>
+  <p><b>404.</b> <ins>That’s an error.</ins>
+  <p>The requested URL <code>/log_agent</code> was not found on this server.  <ins>That’s all we know.</ins>
+2021-07-02 19:39:18,925 [Executor-2] WARN  [com.sensorsdata.analytics.tools.logagent.ServiceClient] - 无法连接 LogAgent 服务: http://datasink.vovaapp.com:80/log_agent，请检查配置是否正确，请求是否可达
+2021-07-02 19:39:18,927 [Executor-2] ERROR [com.sensorsdata.analytics.tools.logagent.FailCollector] - 从服务端获取 LogAgent 进度失败, 失败原因：
+2021-07-02 19:39:18,928 [Executor-2] ERROR [com.sensorsdata.analytics.tools.logagent.FailCollector] - Fail to get LogAgent progress from server, error status: 
+java.lang.Exception
+	at com.sensorsdata.analytics.tools.logagent.ServiceClient.a(ServiceClient.java:93)
+	at com.sensorsdata.analytics.tools.logagent.ServiceClient.getProgress(ServiceClient.java:34)
+	at com.sensorsdata.analytics.tools.logagent.LogAgent.run(LogAgent.java:153)
+	at java.lang.Thread.run(Unknown Source)
+2021-07-02 19:39:18,929 [main] INFO  [com.sensorsdata.analytics.extractor.common.Supervisor] - Executor lifecycle-2 endpoint, is_stopped: false
+2021-07-02 19:39:29,033 [main] INFO  [com.sensorsdata.analytics.extractor.common.Supervisor] - Executor lifecycle-3 started
+2021-07-02 19:39:29,034 [Executor-3] INFO  [com.sensorsdata.analytics.tools.logagent.LogAgent] - Use new local context file.
+2021-07-02 19:39:29,141 [Executor-3] WARN  [com.sensorsdata.analytics.tools.logagent.ServiceClient] - Can't connect to LogAgent Service: http://datasink.vovaapp.com:80/log_agent, !! PLEASE CHECK NETWORK CONNECTION !!, status: 404, errorMsg: <!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 404 (Not Found)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}
+  </style>
+  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>
+  <p><b>404.</b> <ins>That’s an error.</ins>
+  <p>The requested URL <code>/log_agent</code> was not found on this server.  <ins>That’s all we know.</ins>
+2021-07-02 19:39:29,142 [Executor-3] WARN  [com.sensorsdata.analytics.tools.logagent.ServiceClient] - 无法连接 LogAgent 服务: http://datasink.vovaapp.com:80/log_agent，请检查配置是否正确，请求是否可达
+2021-07-02 19:39:29,145 [Executor-3] ERROR [com.sensorsdata.analytics.tools.logagent.FailCollector] - 从服务端获取 LogAgent 进度失败, 失败原因：
+2021-07-02 19:39:29,146 [Executor-3] ERROR [com.sensorsdata.analytics.tools.logagent.FailCollector] - Fail to get LogAgent progress from server, error status: 
+java.lang.Exception
+	at com.sensorsdata.analytics.tools.logagent.ServiceClient.a(ServiceClient.java:93)
+	at com.sensorsdata.analytics.tools.logagent.ServiceClient.getProgress(ServiceClient.java:34)
+	at com.sensorsdata.analytics.tools.logagent.LogAgent.run(LogAgent.java:153)
+	at java.lang.Thread.run(Unknown Source)
+2021-07-02 19:39:29,147 [main] INFO  [com.sensorsdata.analytics.extractor.common.Supervisor] - Executor lifecycle-3 endpoint, is_stopped: false
+2021-07-02 19:39:39,220 [main] INFO  [com.sensorsdata.analytics.extractor.common.Supervisor] - Executor lifecycle-4 started
+2021-07-02 19:39:39,221 [Executor-4] INFO  [com.sensorsdata.analytics.tools.logagent.LogAgent] - Use new local context file.
+2021-07-02 19:39:39,327 [Executor-4] WARN  [com.sensorsdata.analytics.tools.logagent.ServiceClient] - Can't connect to LogAgent Service: http://datasink.vovaapp.com:80/log_agent, !! PLEASE CHECK NETWORK CONNECTION !!, status: 404, errorMsg: <!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 404 (Not Found)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}
+  </style>
+  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>
+  <p><b>404.</b> <ins>That’s an error.</ins>
+  <p>The requested URL <code>/log_agent</code> was not found on this server.  <ins>That’s all we know.</ins>
+2021-07-02 19:39:39,328 [Executor-4] WARN  [com.sensorsdata.analytics.tools.logagent.ServiceClient] - 无法连接 LogAgent 服务: http://datasink.vovaapp.com:80/log_agent，请检查配置是否正确，请求是否可达
+2021-07-02 19:39:39,330 [Executor-4] ERROR [com.sensorsdata.analytics.tools.logagent.FailCollector] - 从服务端获取 LogAgent 进度失败, 失败原因：
+2021-07-02 19:39:39,331 [Executor-4] ERROR [com.sensorsdata.analytics.tools.logagent.FailCollector] - Fail to get LogAgent progress from server, error status: 
+java.lang.Exception
+	at com.sensorsdata.analytics.tools.logagent.ServiceClient.a(ServiceClient.java:93)
+	at com.sensorsdata.analytics.tools.logagent.ServiceClient.getProgress(ServiceClient.java:34)
+	at com.sensorsdata.analytics.tools.logagent.LogAgent.run(LogAgent.java:153)
+	at java.lang.Thread.run(Unknown Source)
+2021-07-02 19:39:39,332 [main] INFO  [com.sensorsdata.analytics.extractor.common.Supervisor] - Executor lifecycle-4 endpoint, is_stopped: false
+2021-07-02 19:40:52,261 [main] INFO  [com.sensorsdata.analytics.tools.logagent.LogAgentMain] - LogAgent version: SensorsAnalytics LogAgent_20210605
+2021-07-02 19:40:52,275 [main] INFO  [com.sensorsdata.analytics.tools.logagent.LogAgentMain] - Config File: C:\Home\Developers\sa-item-setter\logagent\logagent.conf
+2021-07-02 19:40:52,312 [main] INFO  [com.sensorsdata.analytics.tools.logagent.LogAgentMain] - Use FQDN as LogAgentID
+2021-07-02 19:40:52,326 [main] INFO  [com.sensorsdata.analytics.tools.logagent.LogAgentMain] - LogAgent ID: AgeniusE14
+2021-07-02 19:40:52,326 [main] INFO  [com.sensorsdata.analytics.tools.logagent.LogAgentMain] - Source config, path: 'C:\Home\Developers\sa-item-setter\data\sa', pattern: '*.log'
+2021-07-02 19:40:52,447 [main] INFO  [com.sensorsdata.analytics.tools.logagent.LogAgentMain] - Service Uri: http://datasink.vovaapp.com:80/log_agent
+2021-07-02 19:40:52,447 [main] INFO  [com.sensorsdata.analytics.tools.logagent.LogAgentMain] - Sender Type: BatchSender
+2021-07-02 19:40:52,448 [main] INFO  [com.sensorsdata.analytics.tools.logagent.LogAgentMain] - Project: test
+2021-07-02 19:40:52,459 [main] INFO  [com.sensorsdata.analytics.tools.logagent.LogAgentMain] - Pid file: C:\Home\Developers\sa-item-setter\logagent\bin\logagent.pid
+2021-07-02 19:40:52,575 [main] INFO  [com.sensorsdata.analytics.extractor.common.Supervisor] - Executor lifecycle-1 started
+2021-07-02 19:40:52,575 [Executor-1] INFO  [com.sensorsdata.analytics.tools.logagent.LogAgent] - Use new local context file.
+2021-07-02 19:40:53,206 [Executor-1] WARN  [com.sensorsdata.analytics.tools.logagent.ServiceClient] - Can't connect to LogAgent Service: http://datasink.vovaapp.com:80/log_agent, !! PLEASE CHECK NETWORK CONNECTION !!, status: 404, errorMsg: <!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 404 (Not Found)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}
+  </style>
+  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>
+  <p><b>404.</b> <ins>That’s an error.</ins>
+  <p>The requested URL <code>/log_agent</code> was not found on this server.  <ins>That’s all we know.</ins>
+2021-07-02 19:40:53,206 [Executor-1] WARN  [com.sensorsdata.analytics.tools.logagent.ServiceClient] - 无法连接 LogAgent 服务: http://datasink.vovaapp.com:80/log_agent，请检查配置是否正确，请求是否可达
+2021-07-02 19:40:53,210 [Executor-1] ERROR [com.sensorsdata.analytics.tools.logagent.FailCollector] - 从服务端获取 LogAgent 进度失败, 失败原因：
+2021-07-02 19:40:53,211 [Executor-1] ERROR [com.sensorsdata.analytics.tools.logagent.FailCollector] - Fail to get LogAgent progress from server, error status: 
+java.lang.Exception
+	at com.sensorsdata.analytics.tools.logagent.ServiceClient.a(ServiceClient.java:93)
+	at com.sensorsdata.analytics.tools.logagent.ServiceClient.getProgress(ServiceClient.java:34)
+	at com.sensorsdata.analytics.tools.logagent.LogAgent.run(LogAgent.java:153)
+	at java.lang.Thread.run(Unknown Source)
+2021-07-02 19:40:53,214 [main] INFO  [com.sensorsdata.analytics.extractor.common.Supervisor] - Executor lifecycle-1 endpoint, is_stopped: false
+2021-07-02 19:41:03,329 [main] INFO  [com.sensorsdata.analytics.extractor.common.Supervisor] - Executor lifecycle-2 started
+2021-07-02 19:41:03,330 [Executor-2] INFO  [com.sensorsdata.analytics.tools.logagent.LogAgent] - Use new local context file.
+2021-07-02 19:41:03,434 [Executor-2] WARN  [com.sensorsdata.analytics.tools.logagent.ServiceClient] - Can't connect to LogAgent Service: http://datasink.vovaapp.com:80/log_agent, !! PLEASE CHECK NETWORK CONNECTION !!, status: 404, errorMsg: <!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 404 (Not Found)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}
+  </style>
+  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>
+  <p><b>404.</b> <ins>That’s an error.</ins>
+  <p>The requested URL <code>/log_agent</code> was not found on this server.  <ins>That’s all we know.</ins>
+2021-07-02 19:41:03,436 [Executor-2] WARN  [com.sensorsdata.analytics.tools.logagent.ServiceClient] - 无法连接 LogAgent 服务: http://datasink.vovaapp.com:80/log_agent，请检查配置是否正确，请求是否可达
+2021-07-02 19:41:03,439 [Executor-2] ERROR [com.sensorsdata.analytics.tools.logagent.FailCollector] - 从服务端获取 LogAgent 进度失败, 失败原因：
+2021-07-02 19:41:03,440 [Executor-2] ERROR [com.sensorsdata.analytics.tools.logagent.FailCollector] - Fail to get LogAgent progress from server, error status: 
+java.lang.Exception
+	at com.sensorsdata.analytics.tools.logagent.ServiceClient.a(ServiceClient.java:93)
+	at com.sensorsdata.analytics.tools.logagent.ServiceClient.getProgress(ServiceClient.java:34)
+	at com.sensorsdata.analytics.tools.logagent.LogAgent.run(LogAgent.java:153)
+	at java.lang.Thread.run(Unknown Source)
+2021-07-02 19:41:03,454 [main] INFO  [com.sensorsdata.analytics.extractor.common.Supervisor] - Executor lifecycle-2 endpoint, is_stopped: false
+2021-07-02 19:41:17,136 [main] INFO  [com.sensorsdata.analytics.tools.logagent.LogAgentMain] - LogAgent version: SensorsAnalytics LogAgent_20210605
+2021-07-02 19:41:17,146 [main] INFO  [com.sensorsdata.analytics.tools.logagent.LogAgentMain] - Config File: C:\Home\Developers\sa-item-setter\logagent\logagent.conf
+2021-07-02 19:41:17,185 [main] INFO  [com.sensorsdata.analytics.tools.logagent.LogAgentMain] - Use FQDN as LogAgentID
+2021-07-02 19:41:17,197 [main] INFO  [com.sensorsdata.analytics.tools.logagent.LogAgentMain] - LogAgent ID: AgeniusE14
+2021-07-02 19:41:17,198 [main] INFO  [com.sensorsdata.analytics.tools.logagent.LogAgentMain] - Source config, path: 'C:\Home\Developers\sa-item-setter\data\sa', pattern: '*.log'
+2021-07-02 19:41:17,321 [main] INFO  [com.sensorsdata.analytics.tools.logagent.LogAgentMain] - Service Uri: http://datasink.vovaapp.com:443/log_agent
+2021-07-02 19:41:17,321 [main] INFO  [com.sensorsdata.analytics.tools.logagent.LogAgentMain] - Sender Type: BatchSender
+2021-07-02 19:41:17,322 [main] INFO  [com.sensorsdata.analytics.tools.logagent.LogAgentMain] - Project: test
+2021-07-02 19:41:17,332 [main] INFO  [com.sensorsdata.analytics.tools.logagent.LogAgentMain] - Pid file: C:\Home\Developers\sa-item-setter\logagent\bin\logagent.pid
+2021-07-02 19:41:17,447 [main] INFO  [com.sensorsdata.analytics.extractor.common.Supervisor] - Executor lifecycle-1 started
+2021-07-02 19:41:17,447 [Executor-1] INFO  [com.sensorsdata.analytics.tools.logagent.LogAgent] - Use new local context file.
+2021-07-02 19:41:18,070 [Executor-1] ERROR [com.sensorsdata.analytics.tools.logagent.FailCollector] - 从服务端获取 LogAgent 进度失败, 失败原因：
+2021-07-02 19:41:18,073 [Executor-1] ERROR [com.sensorsdata.analytics.tools.logagent.FailCollector] - Fail to get LogAgent progress from server, error status: 
+shaded.org.apache.http.NoHttpResponseException: datasink.vovaapp.com:443 failed to respond
+	at shaded.org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:141)
+	at shaded.org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+	at shaded.org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at shaded.org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at shaded.org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:157)
+	at shaded.org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at shaded.org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at shaded.org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)
+	at shaded.org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at shaded.org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at shaded.org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at shaded.org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at shaded.org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at shaded.org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at com.sensorsdata.analytics.tools.logagent.ServiceClient.a(ServiceClient.java:82)
+	at com.sensorsdata.analytics.tools.logagent.ServiceClient.getProgress(ServiceClient.java:34)
+	at com.sensorsdata.analytics.tools.logagent.LogAgent.run(LogAgent.java:153)
+	at java.lang.Thread.run(Unknown Source)
+2021-07-02 19:41:18,076 [main] INFO  [com.sensorsdata.analytics.extractor.common.Supervisor] - Executor lifecycle-1 endpoint, is_stopped: false
+2021-07-02 19:41:28,178 [main] INFO  [com.sensorsdata.analytics.extractor.common.Supervisor] - Executor lifecycle-2 started
+2021-07-02 19:41:28,179 [Executor-2] INFO  [com.sensorsdata.analytics.tools.logagent.LogAgent] - Use new local context file.
+2021-07-02 19:41:28,266 [Executor-2] ERROR [com.sensorsdata.analytics.tools.logagent.FailCollector] - 从服务端获取 LogAgent 进度失败, 失败原因：
+2021-07-02 19:41:28,269 [Executor-2] ERROR [com.sensorsdata.analytics.tools.logagent.FailCollector] - Fail to get LogAgent progress from server, error status: 
+shaded.org.apache.http.NoHttpResponseException: datasink.vovaapp.com:443 failed to respond
+	at shaded.org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:141)
+	at shaded.org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+	at shaded.org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at shaded.org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at shaded.org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:157)
+	at shaded.org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at shaded.org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at shaded.org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)
+	at shaded.org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at shaded.org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at shaded.org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at shaded.org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at shaded.org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at shaded.org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at com.sensorsdata.analytics.tools.logagent.ServiceClient.a(ServiceClient.java:82)
+	at com.sensorsdata.analytics.tools.logagent.ServiceClient.getProgress(ServiceClient.java:34)
+	at com.sensorsdata.analytics.tools.logagent.LogAgent.run(LogAgent.java:153)
+	at java.lang.Thread.run(Unknown Source)
+2021-07-02 19:41:28,272 [main] INFO  [com.sensorsdata.analytics.extractor.common.Supervisor] - Executor lifecycle-2 endpoint, is_stopped: false
+2021-07-02 19:41:38,365 [main] INFO  [com.sensorsdata.analytics.extractor.common.Supervisor] - Executor lifecycle-3 started
+2021-07-02 19:41:38,366 [Executor-3] INFO  [com.sensorsdata.analytics.tools.logagent.LogAgent] - Use new local context file.
+2021-07-02 19:41:38,452 [Executor-3] ERROR [com.sensorsdata.analytics.tools.logagent.FailCollector] - 从服务端获取 LogAgent 进度失败, 失败原因：
+2021-07-02 19:41:38,456 [Executor-3] ERROR [com.sensorsdata.analytics.tools.logagent.FailCollector] - Fail to get LogAgent progress from server, error status: 
+java.net.SocketException: Software caused connection abort: recv failed
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at shaded.org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)
+	at shaded.org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)
+	at shaded.org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:282)
+	at shaded.org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138)
+	at shaded.org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+	at shaded.org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at shaded.org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at shaded.org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:157)
+	at shaded.org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at shaded.org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at shaded.org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)
+	at shaded.org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at shaded.org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at shaded.org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at shaded.org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at shaded.org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at shaded.org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at com.sensorsdata.analytics.tools.logagent.ServiceClient.a(ServiceClient.java:82)
+	at com.sensorsdata.analytics.tools.logagent.ServiceClient.getProgress(ServiceClient.java:34)
+	at com.sensorsdata.analytics.tools.logagent.LogAgent.run(LogAgent.java:153)
+	at java.lang.Thread.run(Unknown Source)
+2021-07-02 19:41:38,458 [main] INFO  [com.sensorsdata.analytics.extractor.common.Supervisor] - Executor lifecycle-3 endpoint, is_stopped: false
+2021-07-02 19:52:17,846 [main] INFO  [com.sensorsdata.analytics.tools.logagent.LogAgentMain] - LogAgent version: SensorsAnalytics LogAgent_20210605
+2021-07-02 19:52:17,857 [main] INFO  [com.sensorsdata.analytics.tools.logagent.LogAgentMain] - Config File: C:\Home\Developers\sa-item-setter\logagent\logagent.conf
+2021-07-02 19:52:17,894 [main] INFO  [com.sensorsdata.analytics.tools.logagent.LogAgentMain] - Use FQDN as LogAgentID
+2021-07-02 19:52:17,908 [main] INFO  [com.sensorsdata.analytics.tools.logagent.LogAgentMain] - LogAgent ID: AgeniusE14
+2021-07-02 19:52:17,908 [main] INFO  [com.sensorsdata.analytics.tools.logagent.LogAgentMain] - Source config, path: 'C:\Home\Developers\sa-item-setter\data\sa', pattern: '*.log'
+2021-07-02 19:52:18,028 [main] INFO  [com.sensorsdata.analytics.tools.logagent.LogAgentMain] - Service Uri: https://datasink.vovaapp.com/log_agent
+2021-07-02 19:52:18,029 [main] INFO  [com.sensorsdata.analytics.tools.logagent.LogAgentMain] - Sender Type: BatchSender
+2021-07-02 19:52:18,029 [main] INFO  [com.sensorsdata.analytics.tools.logagent.LogAgentMain] - Project: test
+2021-07-02 19:52:18,038 [main] INFO  [com.sensorsdata.analytics.tools.logagent.LogAgentMain] - Pid file: C:\Home\Developers\sa-item-setter\logagent\bin\logagent.pid
+2021-07-02 19:52:18,191 [main] INFO  [com.sensorsdata.analytics.extractor.common.Supervisor] - Executor lifecycle-1 started
+2021-07-02 19:52:18,191 [Executor-1] INFO  [com.sensorsdata.analytics.tools.logagent.LogAgent] - Use new local context file.
+2021-07-02 19:52:19,815 [Executor-1] INFO  [com.sensorsdata.analytics.tools.logagent.ServiceClient] - LogAgent ID: LogAgent.5, sourceProgress: [ fileKey: , offset: 0, fileName: , count: 0, sourceCount: 0 ], target: null
+2021-07-02 19:52:19,815 [Executor-1] INFO  [com.sensorsdata.analytics.tools.logagent.LogAgent] - Service progress. [progress=[ fileKey: , offset: 0, fileName: , count: 0, sourceCount: 0 ]]
+2021-07-02 19:52:19,816 [Executor-1] INFO  [com.sensorsdata.analytics.tools.logagent.LogAgentSourceFileReader] - LogAgentSourceFileReader recover progress:
+[ fileKey: , offset: 0, fileName: , count: 0, sourceCount: 0 ]
+2021-07-02 19:52:19,817 [Executor-1] INFO  [com.sensorsdata.analytics.extractor.reader.SourceFileReader] - Update reading file: C:\Home\Developers\sa-item-setter\data\sa\item.log
+2021-07-02 19:52:19,819 [Executor-1] INFO  [com.sensorsdata.analytics.extractor.filter.ExpiredRecordFilter] - Configure ExpiredRecordFilter before: 864000000, after: 3600000
+2021-07-02 19:52:19,821 [Executor-1] INFO  [com.sensorsdata.analytics.tools.logagent.LogAgent] - Send Target. [targetUri=https://datasink.vovaapp.com/sa]
+2021-07-02 19:52:19,822 [Executor-1] INFO  [com.sensorsdata.analytics.tools.logagent.sender.BatchSender] - Batch sender buffer size: 150
+2021-07-02 19:52:19,823 [Executor-1] INFO  [com.sensorsdata.analytics.tools.logagent.LogAgent] - Current context. [contextInfo={
+  "log_agent_id" : "AgeniusE14",
+  "source_path" : "C:\\Home\\Developers\\sa-item-setter\\data\\sa",
+  "file_match_pattern" : "*.log",
+  "sender_type" : "com.sensorsdata.analytics.tools.logagent.sender.BatchSender",
+  "processor_class_name" : null,
+  "reverse_file_list" : false,
+  "real_time_file_name" : null,
+  "service_uri" : "https://datasink.vovaapp.com/log_agent",
+  "target_uri" : "https://datasink.vovaapp.com/sa",
+  "sending_speed_limit" : 0,
+  "context_file" : "C:\\Home\\Developers\\sa-item-setter\\logagent\\bin\\logagent.pid.context",
+  "project" : "test",
+  "host_key" : "D8:F3:BC:98:30:73",
+  "send_data_timeout_ms" : 10000,
+  "standalone" : null,
+  "flush_sender_interval" : 10,
+  "batch_sender_buffer" : 150,
+  "version" : "SensorsAnalytics LogAgent_20210605",
+  "instance_id" : "LogAgent.5",
+  "source_progress" : null,
+  "update_progress_time" : null,
+  "start_log_agent_time" : 1625226737842,
+  "service_request_time" : 1625226739854,
+  "send_context_time" : null,
+  "client_ip" : "140.206.96.158",
+  "server_id" : "data02.vova-geluofu.sensorsdata.cloud",
+  "service_version" : 1,
+  "cookie_store" : null,
+  "speed" : null,
+  "latency_data_size_in_byte" : null,
+  "latency_data_files" : null,
+  "pid" : "14500",
+  "config_file" : "C:\\Home\\Developers\\sa-item-setter\\logagent\\bin\\\\..\\\\logagent.conf",
+  "cmd_args" : ""
+}]
+2021-07-02 19:52:19,825 [Executor-1] INFO  [com.sensorsdata.analytics.extractor.common.workflow.WorkerManager] - WorkerManager start...
+2021-07-02 19:52:19,826 [Executor-1] INFO  [com.sensorsdata.analytics.extractor.common.workflow.WorkerManager] - started Worker [class com.sensorsdata.analytics.tools.logagent.LogAgent$1ReaderWorker]
+2021-07-02 19:52:19,826 [Executor-1] INFO  [com.sensorsdata.analytics.extractor.common.workflow.WorkerManager] - started Worker [class com.sensorsdata.analytics.tools.logagent.LogAgent$1ProcessorWorker]
+2021-07-02 19:52:19,827 [Executor-1] INFO  [com.sensorsdata.analytics.extractor.common.workflow.WorkerManager] - started Worker [class com.sensorsdata.analytics.tools.logagent.LogAgent$1SenderWorker]
+2021-07-02 19:52:19,836 [ReaderWorker] INFO  [com.sensorsdata.analytics.extractor.reader.SourceFile] - Pulling file: C:\Home\Developers\sa-item-setter\data\sa\item.log, key: item.log, beginOffset: 0
+2021-07-02 19:52:30,190 [SenderWorker] INFO  [com.sensorsdata.analytics.tools.logagent.LogAgent] - LogAgent send speed: 74.96 records/sec, reading file: C:\Home\Developers\sa-item-setter\data\sa\item.log (key: item.log, offset: 204966 / 204966). Last send record count: 775 (key: item.log, offset: 204693).
+2021-07-02 19:52:40,327 [SenderWorker] INFO  [com.sensorsdata.analytics.tools.logagent.LogAgent] - LogAgent send speed: 0.00 records/sec, reading file: C:\Home\Developers\sa-item-setter\data\sa\item.log (key: item.log, offset: 204966 / 204966). Last send record count: 775 (key: item.log, offset: 204693).
+2021-07-02 19:52:50,523 [SenderWorker] INFO  [com.sensorsdata.analytics.tools.logagent.LogAgent] - LogAgent send speed: 0.00 records/sec, reading file: C:\Home\Developers\sa-item-setter\data\sa\item.log (key: item.log, offset: 204966 / 204966). Last send record count: 775 (key: item.log, offset: 204693).
+2021-07-02 19:53:00,698 [SenderWorker] INFO  [com.sensorsdata.analytics.tools.logagent.LogAgent] - LogAgent send speed: 0.00 records/sec, reading file: C:\Home\Developers\sa-item-setter\data\sa\item.log (key: item.log, offset: 204966 / 204966). Last send record count: 775 (key: item.log, offset: 204693).
+2021-07-02 19:53:10,866 [SenderWorker] INFO  [com.sensorsdata.analytics.tools.logagent.LogAgent] - LogAgent send speed: 0.00 records/sec, reading file: C:\Home\Developers\sa-item-setter\data\sa\item.log (key: item.log, offset: 204966 / 204966). Last send record count: 775 (key: item.log, offset: 204693).
+2021-07-02 19:53:21,043 [SenderWorker] INFO  [com.sensorsdata.analytics.tools.logagent.LogAgent] - LogAgent send speed: 0.00 records/sec, reading file: C:\Home\Developers\sa-item-setter\data\sa\item.log (key: item.log, offset: 204966 / 204966). Last send record count: 775 (key: item.log, offset: 204693).
+2021-07-02 19:53:31,206 [SenderWorker] INFO  [com.sensorsdata.analytics.tools.logagent.LogAgent] - LogAgent send speed: 0.00 records/sec, reading file: C:\Home\Developers\sa-item-setter\data\sa\item.log (key: item.log, offset: 204966 / 204966). Last send record count: 775 (key: item.log, offset: 204693).
+2021-07-02 19:53:41,378 [SenderWorker] INFO  [com.sensorsdata.analytics.tools.logagent.LogAgent] - LogAgent send speed: 0.00 records/sec, reading file: C:\Home\Developers\sa-item-setter\data\sa\item.log (key: item.log, offset: 204966 / 204966). Last send record count: 775 (key: item.log, offset: 204693).
+2021-07-02 19:53:51,536 [SenderWorker] INFO  [com.sensorsdata.analytics.tools.logagent.LogAgent] - LogAgent send speed: 0.00 records/sec, reading file: C:\Home\Developers\sa-item-setter\data\sa\item.log (key: item.log, offset: 204966 / 204966). Last send record count: 775 (key: item.log, offset: 204693).
+2021-07-02 19:54:01,686 [SenderWorker] INFO  [com.sensorsdata.analytics.tools.logagent.LogAgent] - LogAgent send speed: 0.00 records/sec, reading file: C:\Home\Developers\sa-item-setter\data\sa\item.log (key: item.log, offset: 204966 / 204966). Last send record count: 775 (key: item.log, offset: 204693).
+2021-07-02 19:54:11,869 [SenderWorker] INFO  [com.sensorsdata.analytics.tools.logagent.LogAgent] - LogAgent send speed: 0.00 records/sec, reading file: C:\Home\Developers\sa-item-setter\data\sa\item.log (key: item.log, offset: 204966 / 204966). Last send record count: 775 (key: item.log, offset: 204693).
