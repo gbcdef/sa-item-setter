@@ -1,5 +1,5 @@
 
----
+
 /* 
 获取父级分类情况
 
@@ -15,14 +15,12 @@ from categories c1
 left outer join categories c2 on c1.parent_id = c2.cat_id and c2.depth=3
 left outer join categories c3 on c1.parent_id = c3.cat_id and c3.depth=2
 left outer join categories c4 on c1.parent_id = c4.cat_id and c4.depth=1
-order by c1.depth desc
+order by c1.depth desc;
 
----
+
 /*
 从1级分类开始往下，找1级分类的下一级直接作为二级分类，不管下一级分类是3级还是4级
 实际：根分类除了root还有other，所以要从0级分类开始向下查找
-
-
 */
 DROP VIEW IF EXISTS `categories_tmp1`;
 CREATE VIEW `categories_tmp1` AS SELECT
@@ -58,7 +56,7 @@ SELECT DISTINCT
 	a2.compcat1,
 	a2.compcat2,
 	a2.compcat3,
-	NULL AS `compcat4` 
+	'Empty' AS `compcat4` 
 FROM
 	(
 	SELECT
@@ -77,8 +75,8 @@ SELECT DISTINCT
 	a1.cat_id,
 	a2.compcat1,
 	a2.compcat2,
-	NULL AS `compcat3`,
-	NULL AS `compcat4` 
+	'Empty' AS `compcat3`,
+	'Empty' AS `compcat4` 
 FROM
 	(
 	SELECT
@@ -96,9 +94,9 @@ FROM
 SELECT DISTINCT
 	a1.cat_id,
 	a2.compcat1,
-	NULL AS `compcat2`,
-	NULL AS `compcat3`,
-	NULL AS `compcat4` 
+	'Empty' AS `compcat2`,
+	'Empty' AS `compcat3`,
+	'Empty' AS `compcat4` 
 FROM
 	(
 	SELECT
