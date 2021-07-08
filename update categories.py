@@ -10,7 +10,7 @@ SA_SERVER_URL = 'https://datasink.vovaapp.com/sa?project=test'
 consumer = sensorsanalytics.AsyncBatchConsumer(SA_SERVER_URL)
 sa = sensorsanalytics.SensorsAnalytics(consumer)
 
-cat_file = 'cat_id清洗后商品分类.xlsx'
+cat_file = 'dataprep/cat_id清洗后商品分类.xlsx'
 cat_df = pd.read_excel(cat_file)
 cat_df = cat_df.fillna('Empty')
 

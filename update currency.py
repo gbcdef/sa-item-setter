@@ -10,8 +10,8 @@ SA_SERVER_URL = 'https://datasink.vovaapp.com/sa?project=test'
 consumer = sensorsanalytics.AsyncBatchConsumer(SA_SERVER_URL)
 sa = sensorsanalytics.SensorsAnalytics(consumer)
 
-currency_file = '维度表+维度字典.xlsx'
-currency_df = pd.read_excel(currency_file, sheet_name='币种维度表')
+currency_file = 'dataprep/维度表+维度字典.xlsx'
+currency_df = pd.read_excel(currency_file, sheet_name='currency维度表')
 
 item_type = 'currency'
 
