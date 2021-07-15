@@ -6,7 +6,8 @@ import pandas as pd
 lg = logging.getLogger(__name__)
 logging.basicConfig(level=logging.DEBUG)
 
-SA_SERVER_URL = 'https://datasink.vovaapp.com/sa?project=test'
+# SA_SERVER_URL = 'https://datasink.vovaapp.com/sa?project=test'
+SA_SERVER_URL = 'https://datasink.vovaapp.com/sa?project=production'
 consumer = sensorsanalytics.AsyncBatchConsumer(SA_SERVER_URL)
 sa = sensorsanalytics.SensorsAnalytics(consumer)
 
